@@ -1,0 +1,83 @@
+# Molecular Beer Recommendation App Blueprint
+
+## Goal Description
+Build a Static Single Page Application (SPA) that recommends beers based on molecular similarity (Raman spectra and Yeast phylogenetic distance) to user-selected beers. The app will be client-side only, loading pre-processed JSON data.
+
+## Architecture
+- **Type**: Static SPA
+- **Framework**: React (Vite) + TypeScript
+- **Styling**: Tailwind CSS
+- **Data**: Pre-processed JSON files (ETL script required)
+- **Logic**: Client-side execution of SFEC (Raman) and Weighted UniFrac (Yeast) algorithms.
+
+## Step-by-Step Implementation Plan
+
+### Phase 1: Project Setup & Data ETL
+**Goal**: Initialize the project and prepare the data assets.
+1.  **Project Initialization**:
+    -   Scaffold Vite + React + TypeScript project.
+    -   Install dependencies: `tailwindcss`, `postcss`, `autoprefixer`, `d3` (for tree parsing if needed, or custom), `lucide-react` (icons).
+    -   Configure Tailwind with the "Biohacker" theme colors.
+2.  **ETL Script (`etl.js`)**:
+    -   Create a Node.js script to process raw data.
+    -   **Inputs**: `beers-db.csv`, `raman-data.csv`, `yeast-data.csv`, `yeast_ITS1_phylogenetic_tree.nwk`.
+    -   **Processing**:
+        -   Parse CSVs.
+        -   Parse Newick tree file into a traversable JSON structure (nodes, lengths).
+        -   Align IDs across datasets.
+        -   Round Raman floats to 4 decimals.
+        -   Calculate relative abundances for yeast data.
+    -   **Outputs**: `beers.json`, `raman.json`, `yeast.json`, `tree.json` in `public/data/`.
+
+### Phase 2: Core Logic & Algorithms
+**Goal**: Implement the recommendation engine logic with tests.
+1.  **Math Utilities (`src/utils/math.ts`)**:
+    -   Implement `cosineSimilarity(vecA, vecB)`.
+    -   Implement `sfecSimilarity(vecA, vecB)` (Squared First-Difference Euclidean Cosine).
+2.  **Phylogenetics Logic (`src/utils/bio.ts`)**:
+    -   Implement `calculateUniFrac(tree, sampleA, sampleB)`.
+    -   Logic to traverse the tree JSON and calculate the weighted distance.
+3.  **Recommendation Engine (`src/engine/recommender.ts`)**:
+    -   Implement the "Golden Ratio" scoring: $S_{Total} = 0.618 \times S_{Raman} + 0.382 \times S_{Yeast}$.
+    -   Handle missing yeast data cases.
+    -   Implement "Barman" modes (Wander Away vs. Comfort Zone).
+
+### Phase 3: UI/UX Implementation
+**Goal**: Build the "Lab Terminal" interface.
+1.  **Global Components**:
+    -   `Layout`: Main grid, background texture (diffraction grating), header.
+    -   `BeerCard`: Display beer info, "Biohacker" styling, hover effects.
+    -   `Barcode`: Visual component for spectral data.
+2.  **State Management**:
+    -   `DataContext`: Load and provide JSON data.
+    -   `SelectionContext`: Track user choices (max 3), timer, and recommendation state.
+3.  **Main Features**:
+    -   **Beer List**: Filterable list with "DNA" icons for yeast data availability.
+    -   **Map Nav**: Simple SVG map to filter beers by region (optional/simplified for MVP).
+    -   **Recommendation View**: Display results with scores and disclaimers.
+
+### Phase 4: Integration & Polish
+**Goal**: Wire everything together and refine.
+1.  **App Integration**:
+    -   Connect `App.tsx` to `DataContext` and `recommender.ts`.
+    -   Implement the flow: Select -> Analyze -> Result.
+2.  **Performance Tuning**:
+    -   Ensure UI doesn't freeze during calculation (use `useMemo` or Web Workers if needed, though dataset is small).
+3.  **Visual Polish**:
+    -   Verify "Biohacker" theme (colors, fonts, animations).
+    -   Add "Sequencing..." loading state.
+
+## Verification Plan
+### Automated Tests
+-   **Unit Tests**:
+    -   `math.test.ts`: Verify `sfecSimilarity` against known vectors.
+    -   `bio.test.ts`: Verify `calculateUniFrac` with a simple mock tree and samples (Self-comparison = 0 distance).
+    -   `recommender.test.ts`: Verify scoring logic and mode selection.
+-   **ETL Validation**:
+    -   Run `etl.js` and check `public/data/*.json` schema and content integrity.
+
+### Manual Verification
+-   **End-to-End**:
+    -   Select 3 beers -> Click "Analyze" -> Verify 2 results appear.
+    -   Check "Wander Away" trigger (wait > 3 mins, pick disparate beers).
+    -   Verify visual feedback (hover states, loading animation).

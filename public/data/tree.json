@@ -1,0 +1,956 @@
+{
+  "name": "Inner86",
+  "length": 0,
+  "children": [
+    {
+      "name": "Inner85",
+      "length": 0.00206,
+      "children": [
+        {
+          "name": "Inner84",
+          "length": 0.00326,
+          "children": [
+            {
+              "name": "Inner78",
+              "length": 0.00688,
+              "children": [
+                {
+                  "name": "Inner72",
+                  "length": 0.00683,
+                  "children": [
+                    {
+                      "name": "Inner49",
+                      "length": 0.01314,
+                      "children": [
+                        {
+                          "name": "NR_073240.1_Cutaneotrichosporon_moniliiforme",
+                          "length": 0.35566,
+                          "children": []
+                        },
+                        {
+                          "name": "NR_130673.1_Candida_parapsilosis",
+                          "length": 0.35512,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Inner71",
+                      "length": 0.00129,
+                      "children": [
+                        {
+                          "name": "Inner10",
+                          "length": 0.114,
+                          "children": [
+                            {
+                              "name": "NR_130695.1_Vishniacozyma_carnescens",
+                              "length": 0.26209,
+                              "children": []
+                            },
+                            {
+                              "name": "NR_119658.1_Cladosporium_ramotenellum",
+                              "length": 0.26602,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Inner41",
+                          "length": 0.01451,
+                          "children": [
+                            {
+                              "name": "Inner19",
+                              "length": 0.05594,
+                              "children": [
+                                {
+                                  "name": "NR_132075.1_Wallemia_muriae",
+                                  "length": 0.31296,
+                                  "children": []
+                                },
+                                {
+                                  "name": "NR_138296.1_Candida_solani",
+                                  "length": 0.32064,
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Inner39",
+                              "length": 0.00256,
+                              "children": [
+                                {
+                                  "name": "Inner32",
+                                  "length": 0.00729,
+                                  "children": [
+                                    {
+                                      "name": "Inner27",
+                                      "length": 0.01647,
+                                      "children": [
+                                        {
+                                          "name": "NR_111195.1_Pichia_membranifaciens",
+                                          "length": 0.36474,
+                                          "children": []
+                                        },
+                                        {
+                                          "name": "NR_131315.1_Pichia_kudriavzevii",
+                                          "length": 0.36292,
+                                          "children": []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "Inner29",
+                                      "length": 0.01014,
+                                      "children": [
+                                        {
+                                          "name": "NR_135979.1_Epicoccum_brasiliense",
+                                          "length": 0.35378,
+                                          "children": []
+                                        },
+                                        {
+                                          "name": "NR_130681.1_Candida_apicola",
+                                          "length": 0.36227,
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "Inner31",
+                                  "length": 0.01364,
+                                  "children": [
+                                    {
+                                      "name": "NR_130650.1_Papiliotrema_aurea",
+                                      "length": 0.37578,
+                                      "children": []
+                                    },
+                                    {
+                                      "name": "Inner25",
+                                      "length": 0.0158,
+                                      "children": [
+                                        {
+                                          "name": "NR_137723.1_Clavispora_reshetovae",
+                                          "length": 0.37768,
+                                          "children": []
+                                        },
+                                        {
+                                          "name": "NR_111030.1_Brettanomyces_bruxellensis",
+                                          "length": 0.37675,
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Inner45",
+                  "length": 0.01219,
+                  "children": [
+                    {
+                      "name": "NR_119656.1_Cladosporium_herbarum",
+                      "length": 0.36675,
+                      "children": []
+                    },
+                    {
+                      "name": "Inner22",
+                      "length": 0.03548,
+                      "children": [
+                        {
+                          "name": "NR_138367.1_Thelebolus_globosus",
+                          "length": 0.33884,
+                          "children": []
+                        },
+                        {
+                          "name": "NR_144909.1_Aureobasidium_pullulans",
+                          "length": 0.33605,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Inner83",
+              "length": 0.00322,
+              "children": [
+                {
+                  "name": "Inner81",
+                  "length": 0.00466,
+                  "children": [
+                    {
+                      "name": "Inner79",
+                      "length": 0.00484,
+                      "children": [
+                        {
+                          "name": "Inner74",
+                          "length": 0.00714,
+                          "children": [
+                            {
+                              "name": "Inner40",
+                              "length": 0.02281,
+                              "children": [
+                                {
+                                  "name": "NR_077207.1_Trichoderma_atroviride",
+                                  "length": 0.34996,
+                                  "children": []
+                                },
+                                {
+                                  "name": "Inner13",
+                                  "length": 0.06697,
+                                  "children": [
+                                    {
+                                      "name": "Inner11",
+                                      "length": 0.01672,
+                                      "children": [
+                                        {
+                                          "name": "NR_138336.1_Penicillium_kongii",
+                                          "length": 0.26021,
+                                          "children": []
+                                        },
+                                        {
+                                          "name": "NR_138342.1_Penicillium_fusisporum",
+                                          "length": 0.26377,
+                                          "children": []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "NR_077153.1_Penicillium_crustosum",
+                                      "length": 0.27129,
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Inner64",
+                              "length": 0.01155,
+                              "children": [
+                                {
+                                  "name": "NR_145167.1_Paraphaeosphaeria_sardoa",
+                                  "length": 0.35427,
+                                  "children": []
+                                },
+                                {
+                                  "name": "Inner63",
+                                  "length": 0.00179,
+                                  "children": [
+                                    {
+                                      "name": "NR_138446.1_Trichoderma_neokoningii",
+                                      "length": 0.3508,
+                                      "children": []
+                                    },
+                                    {
+                                      "name": "NR_119855.1_Cladosporium_tenuissimum",
+                                      "length": 0.363,
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Inner75",
+                          "length": 0.00659,
+                          "children": [
+                            {
+                              "name": "Inner35",
+                              "length": 0.03547,
+                              "children": [
+                                {
+                                  "name": "NR_077163.1_Gelasinospora_tetrasperma",
+                                  "length": 0.34252,
+                                  "children": []
+                                },
+                                {
+                                  "name": "NR_119960.1_Cladosporium_grevilleae",
+                                  "length": 0.341,
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Inner69",
+                              "length": 0.00689,
+                              "children": [
+                                {
+                                  "name": "Inner65",
+                                  "length": 0.00802,
+                                  "children": [
+                                    {
+                                      "name": "Inner55",
+                                      "length": 0.01676,
+                                      "children": [
+                                        {
+                                          "name": "NR_111310.1_Sporopachydermia_lactativora",
+                                          "length": 0.34849,
+                                          "children": []
+                                        },
+                                        {
+                                          "name": "NR_077182.1_Priceomyces_fermenticarens",
+                                          "length": 0.35025,
+                                          "children": []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "NR_119950.1_Cladosporium_phaenocomae",
+                                      "length": 0.37561,
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "Inner68",
+                                  "length": 0.00087,
+                                  "children": [
+                                    {
+                                      "name": "Inner62",
+                                      "length": 0.01112,
+                                      "children": [
+                                        {
+                                          "name": "Inner42",
+                                          "length": 0.02399,
+                                          "children": [
+                                            {
+                                              "name": "NR_073296.1_Rhodotorula_mucilaginosa",
+                                              "length": 0.33524,
+                                              "children": []
+                                            },
+                                            {
+                                              "name": "NR_111044.1_Mrakia_frigida",
+                                              "length": 0.33921,
+                                              "children": []
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "name": "Inner60",
+                                          "length": 0.00555,
+                                          "children": [
+                                            {
+                                              "name": "Inner48",
+                                              "length": 0.0102,
+                                              "children": [
+                                                {
+                                                  "name": "NR_126116.1_Mucor_circinelloides",
+                                                  "length": 0.34053,
+                                                  "children": []
+                                                },
+                                                {
+                                                  "name": "NR_119890.1_Hebeloma_angustisporium",
+                                                  "length": 0.34804,
+                                                  "children": []
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "name": "Inner43",
+                                              "length": 0.01742,
+                                              "children": [
+                                                {
+                                                  "name": "NR_132919.1_Ganoderma_destructans",
+                                                  "length": 0.33506,
+                                                  "children": []
+                                                },
+                                                {
+                                                  "name": "NR_130655.1_Filobasidium_magnum",
+                                                  "length": 0.33369,
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "Inner67",
+                                      "length": 0.00248,
+                                      "children": [
+                                        {
+                                          "name": "NR_138247.1_Lachancea_quebecensis",
+                                          "length": 0.37143,
+                                          "children": []
+                                        },
+                                        {
+                                          "name": "Inner66",
+                                          "length": 0.00298,
+                                          "children": [
+                                            {
+                                              "name": "Inner47",
+                                              "length": 0.02395,
+                                              "children": [
+                                                {
+                                                  "name": "Inner30",
+                                                  "length": 0.02156,
+                                                  "children": [
+                                                    {
+                                                      "name": "NR_121309.1_Thermomyces_lanuginosus",
+                                                      "length": 0.3347,
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "name": "NR_144767.1_Cystobasidiopsis_lophatheri",
+                                                      "length": 0.33099,
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "name": "Inner6",
+                                                  "length": 0.35333,
+                                                  "children": [
+                                                    {
+                                                      "name": "NR_119841.1_Cladosporium_cucumerinum",
+                                                      "length": 0.00288,
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "name": "Inner5",
+                                                      "length": 0.00335,
+                                                      "children": [
+                                                        {
+                                                          "name": "NR_120014.1_Cladosporium_soldanellae",
+                                                          "length": 0,
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "name": "Inner4",
+                                                          "length": 0,
+                                                          "children": [
+                                                            {
+                                                              "name": "NR_120013.1_Cladosporium_phlei",
+                                                              "length": 0,
+                                                              "children": []
+                                                            },
+                                                            {
+                                                              "name": "Inner3",
+                                                              "length": 0,
+                                                              "children": [
+                                                                {
+                                                                  "name": "NR_120012.1_Cladosporium_echinulatum",
+                                                                  "length": 0,
+                                                                  "children": []
+                                                                },
+                                                                {
+                                                                  "name": "NR_120009.1_Cladosporium_allii",
+                                                                  "length": 0,
+                                                                  "children": []
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "name": "Inner61",
+                                              "length": 0.00792,
+                                              "children": [
+                                                {
+                                                  "name": "Inner58",
+                                                  "length": 0.00579,
+                                                  "children": [
+                                                    {
+                                                      "name": "NR_111126.1_Saccharomycodes_ludwigii",
+                                                      "length": 0.35881,
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "name": "Inner51",
+                                                      "length": 0.01014,
+                                                      "children": [
+                                                        {
+                                                          "name": "NR_132798.1_Roccella_elisabethae",
+                                                          "length": 0.36021,
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "name": "NR_111475.1_Malassezia_globosa",
+                                                          "length": 0.36382,
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "name": "Inner59",
+                                                  "length": 0.00546,
+                                                  "children": [
+                                                    {
+                                                      "name": "Inner56",
+                                                      "length": 0.00745,
+                                                      "children": [
+                                                        {
+                                                          "name": "NR_138158.1_Kazachstania_kunashirensis",
+                                                          "length": 0.36094,
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "name": "Inner14",
+                                                          "length": 0.08284,
+                                                          "children": [
+                                                            {
+                                                              "name": "NR_137793.1_Truncospora_macrospora",
+                                                              "length": 0.28443,
+                                                              "children": []
+                                                            },
+                                                            {
+                                                              "name": "NR_138368.1_Ceratobasidium_ramicola",
+                                                              "length": 0.28135,
+                                                              "children": []
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "name": "Inner54",
+                                                      "length": 0.0102,
+                                                      "children": [
+                                                        {
+                                                          "name": "Inner46",
+                                                          "length": 0.00885,
+                                                          "children": [
+                                                            {
+                                                              "name": "NR_137586.1_Saccharomyces_eubayanus",
+                                                              "length": 0.36316,
+                                                              "children": []
+                                                            },
+                                                            {
+                                                              "name": "Inner15",
+                                                              "length": 0.07153,
+                                                              "children": [
+                                                                {
+                                                                  "name": "NR_138215.1_Ogataea_pilisensis",
+                                                                  "length": 0.29145,
+                                                                  "children": []
+                                                                },
+                                                                {
+                                                                  "name": "NR_137700.1_Ogataea_nitratoaversa",
+                                                                  "length": 0.29062,
+                                                                  "children": []
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "name": "Inner53",
+                                                          "length": 0.00054,
+                                                          "children": [
+                                                            {
+                                                              "name": "NR_103585.1_Malassezia_restricta",
+                                                              "length": 0.37433,
+                                                              "children": []
+                                                            },
+                                                            {
+                                                              "name": "Inner52",
+                                                              "length": 0.0022,
+                                                              "children": [
+                                                                {
+                                                                  "name": "Inner50",
+                                                                  "length": 0.00221,
+                                                                  "children": [
+                                                                    {
+                                                                      "name": "NR_132792.1_Typhula_maritima",
+                                                                      "length": 0.36361,
+                                                                      "children": []
+                                                                    },
+                                                                    {
+                                                                      "name": "NR_111419.1_Ogataea_chonburiensis",
+                                                                      "length": 0.37046,
+                                                                      "children": []
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "name": "Inner44",
+                                                                  "length": 0.01067,
+                                                                  "children": [
+                                                                    {
+                                                                      "name": "NR_111006.1_Kazachstania_martiniae",
+                                                                      "length": 0.36588,
+                                                                      "children": []
+                                                                    },
+                                                                    {
+                                                                      "name": "Inner38",
+                                                                      "length": 0.00514,
+                                                                      "children": [
+                                                                        {
+                                                                          "name": "Inner33",
+                                                                          "length": 0.01101,
+                                                                          "children": [
+                                                                            {
+                                                                              "name": "Inner16",
+                                                                              "length": 0.05407,
+                                                                              "children": [
+                                                                                {
+                                                                                  "name": "NR_111354.1_Saccharomyces_mikatae",
+                                                                                  "length": 0.32239,
+                                                                                  "children": []
+                                                                                },
+                                                                                {
+                                                                                  "name": "NR_111355.1_Saccharomyces_kudriavzevii",
+                                                                                  "length": 0.31808,
+                                                                                  "children": []
+                                                                                }
+                                                                              ]
+                                                                            },
+                                                                            {
+                                                                              "name": "Inner26",
+                                                                              "length": 0.01364,
+                                                                              "children": [
+                                                                                {
+                                                                                  "name": "NR_111356.1_Kazachstania_siamensis",
+                                                                                  "length": 0.35882,
+                                                                                  "children": []
+                                                                                },
+                                                                                {
+                                                                                  "name": "Inner17",
+                                                                                  "length": 0.03225,
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "name": "NR_138237.1_Ogataea_wickerhamii",
+                                                                                      "length": 0.32111,
+                                                                                      "children": []
+                                                                                    },
+                                                                                    {
+                                                                                      "name": "NR_137673.1_Kazachstania_aquatica",
+                                                                                      "length": 0.32715,
+                                                                                      "children": []
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        },
+                                                                        {
+                                                                          "name": "Inner37",
+                                                                          "length": 0.00161,
+                                                                          "children": [
+                                                                            {
+                                                                              "name": "Inner36",
+                                                                              "length": 0.00307,
+                                                                              "children": [
+                                                                                {
+                                                                                  "name": "NR_138272.1_Saccharomyces_paradoxus",
+                                                                                  "length": 0.36724,
+                                                                                  "children": []
+                                                                                },
+                                                                                {
+                                                                                  "name": "NR_120017.1_Rhizopus_sexualis",
+                                                                                  "length": 0.36481,
+                                                                                  "children": []
+                                                                                }
+                                                                              ]
+                                                                            },
+                                                                            {
+                                                                              "name": "Inner34",
+                                                                              "length": 0.00944,
+                                                                              "children": [
+                                                                                {
+                                                                                  "name": "Inner21",
+                                                                                  "length": 0.02906,
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "name": "Inner7",
+                                                                                      "length": 0.10533,
+                                                                                      "children": [
+                                                                                        {
+                                                                                          "name": "NR_111007.1_Saccharomyces_cerevisiae",
+                                                                                          "length": 0.22126,
+                                                                                          "children": []
+                                                                                        },
+                                                                                        {
+                                                                                          "name": "NR_144772.1_Saccharomyces_cariocanus",
+                                                                                          "length": 0.21566,
+                                                                                          "children": []
+                                                                                        }
+                                                                                      ]
+                                                                                    },
+                                                                                    {
+                                                                                      "name": "Inner1",
+                                                                                      "length": 0.32211,
+                                                                                      "children": [
+                                                                                        {
+                                                                                          "name": "NR_138273.1_Saccharomyces_pastorianus",
+                                                                                          "length": 0,
+                                                                                          "children": []
+                                                                                        },
+                                                                                        {
+                                                                                          "name": "NR_138274.1_Saccharomyces_bayanus",
+                                                                                          "length": 0,
+                                                                                          "children": []
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                },
+                                                                                {
+                                                                                  "name": "NR_111360.1_Candida_sithepensis",
+                                                                                  "length": 0.35752,
+                                                                                  "children": []
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Inner80",
+                      "length": 0.00368,
+                      "children": [
+                        {
+                          "name": "Inner73",
+                          "length": 0.00967,
+                          "children": [
+                            {
+                              "name": "Inner18",
+                              "length": 0.06762,
+                              "children": [
+                                {
+                                  "name": "NR_077131.1_Neurospora_terricola",
+                                  "length": 0.29652,
+                                  "children": []
+                                },
+                                {
+                                  "name": "NR_111153.1_Kurtzmaniella_cleridarum",
+                                  "length": 0.28667,
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Inner2",
+                              "length": 0.34398,
+                              "children": [
+                                {
+                                  "name": "NR_119663.1_Cladosporium_variabile",
+                                  "length": 0.02335,
+                                  "children": []
+                                },
+                                {
+                                  "name": "NR_119657.1_Cladosporium_macrocarpum",
+                                  "length": 0.0192,
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Inner77",
+                          "length": 0.00619,
+                          "children": [
+                            {
+                              "name": "NR_138164.1_Priceomyces_melissophilus",
+                              "length": 0.37029,
+                              "children": []
+                            },
+                            {
+                              "name": "Inner76",
+                              "length": 0.00105,
+                              "children": [
+                                {
+                                  "name": "NR_077125.1_Humicola_nigrescens",
+                                  "length": 0.3633,
+                                  "children": []
+                                },
+                                {
+                                  "name": "Inner23",
+                                  "length": 0.04779,
+                                  "children": [
+                                    {
+                                      "name": "NR_144829.1_Penicillium_cravenianum",
+                                      "length": 0.32448,
+                                      "children": []
+                                    },
+                                    {
+                                      "name": "NR_131277.1_Aspergillus_versicolor",
+                                      "length": 0.31511,
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Inner70",
+                  "length": 0.0135,
+                  "children": [
+                    {
+                      "name": "Inner24",
+                      "length": 0.03926,
+                      "children": [
+                        {
+                          "name": "NR_111210.1_Wickerhamomyces_anomalus",
+                          "length": 0.31764,
+                          "children": []
+                        },
+                        {
+                          "name": "NR_130688.1_Pichia_fermentans",
+                          "length": 0.3211,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "NR_131316.1_Alternaria_alternata",
+                      "length": 0.36311,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NR_137143.1_Alternaria_destruens",
+          "length": 0.36981,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Inner57",
+      "length": 0.01181,
+      "children": [
+        {
+          "name": "Inner28",
+          "length": 0.02972,
+          "children": [
+            {
+              "name": "Inner8",
+              "length": 0.11202,
+              "children": [
+                {
+                  "name": "NR_132909.1_Nematodospora_valgi",
+                  "length": 0.218,
+                  "children": []
+                },
+                {
+                  "name": "NR_111471.1_Candida_jiufengensis",
+                  "length": 0.2208,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Inner20",
+              "length": 0.02951,
+              "children": [
+                {
+                  "name": "NR_111473.1_Candida_pseudojiufengensis",
+                  "length": 0.30747,
+                  "children": []
+                },
+                {
+                  "name": "NR_111344.1_Candida_bohioensis",
+                  "length": 0.31167,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Inner12",
+          "length": 0.09163,
+          "children": [
+            {
+              "name": "Inner9",
+              "length": 0.03508,
+              "children": [
+                {
+                  "name": "NR_111167.1_Botryozyma_nematodophila",
+                  "length": 0.22473,
+                  "children": []
+                },
+                {
+                  "name": "NR_136974.1_Botryozyma_mucatilis",
+                  "length": 0.22509,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "NR_137144.1_Botryozyma_americana",
+              "length": 0.25798,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Inner82",
+      "length": 0.0034,
+      "children": [
+        {
+          "name": "NR_137686.1_Sporidiobolus_metaroseus",
+          "length": 0.36521,
+          "children": []
+        },
+        {
+          "name": "NR_111593.1_Lodderomyces_elongisporus",
+          "length": 0.36254,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

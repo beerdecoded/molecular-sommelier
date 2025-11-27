@@ -1,0 +1,127 @@
+ID,Brewery,Name,Country,Un-Subregion,Region,Style,ABV,IBU,SRM,Calories,has_yeast_data,Wheat,Corn,Rice,Oats
+1,Brasserie Lefebvre for Amstein,Wittekop,Belgium,Western Europe,Europe,Witbier,4.5,12,4,135,0,1,0,0,0
+2,Adnams,Adnams Broadside,UK,Northern Europe,Europe,English Strong Ale,6.3,43,18,189,0,0,0,0,0
+3,Brasserie Du Jorat,Ambrée des Brigands du Jorat,Switzerland,Western Europe,Europe,Smoked,6,14,10,180,1,0,0,0,0
+4,Anchor,Anchor Porter,USA,Northern America,North America,Porter,5.6,27,20,168,0,0,0,0,0
+5,Anchor,Anchor Steam,USA,Northern America,North America,California Common,4.9,37,6,147,0,0,0,0,0
+6,Anderson Valley,Heelch O'hops Double IPA,USA,Northern America,North America,IPA,8.7,100,12,261,0,0,0,0,0
+7,Asahi,Asahi super dry,Japan,Eastern Asia,Asia,Lager,5,12,3,150,0,0,1,1,0
+8,BFM,La Salamandre,Switzerland,Western Europe,Europe,Weissbier,6.3,15,4,189,1,1,0,0,0
+9,BFM,La Torpille,Switzerland,Western Europe,Europe,Belgian Strong Ale,7.5,40,16,225,0,0,0,0,0
+10,Brasserie Du Jorat,Blanche du Jorat,Switzerland,Western Europe,Europe,Weissbier,5.5,15,4,180,0,1,0,0,0
+11,Brooklyn Brewery,Brooklyn Lager,USA,Northern America,North America,Amber Lager,5.2,33,14,156,0,0,0,0,0
+12,Black Sheep,Monty Python's Holy Grail,UK,Northern Europe,Europe,Premium Bitter,4.7,30,12,141,0,1,0,0,0
+13,Thai Beverages,Chang,Thailand,South-eastern Asia,Asia,Pale Lager,5,14,3,150,0,0,0,1,0
+14,Chimay,Chimay Red Cap,Belgium,Western Europe,Europe,Abbey Dubbel,7,20,14,210,1,1,0,0,0
+15,Innis & Gunn,Innis & Gunn Rum Finish,UK,Northern Europe,Europe,English Strong Ale,7.4,21,28,222,0,0,0,0,0
+16,Brasserie Castelain,Ch'Ti Blonde,France,Western Europe,Europe,Bière de Garde,6.4,24,12,192,0,0,0,0,0
+17,Brewdog,Cocoa Psycho,UK,Northern Europe,Europe,Imperial Stout,10,85,40,300,0,1,0,0,0
+18,Coopers Brewery,Coopers Original Pale Ale,Australia,Australia and New Zealand,Oceania,Golden Ale,4.5,22,5,135,0,0,0,0,0
+19,Brouwerij Huyghe,Delirium Red,Belgium,Western Europe,Europe,Fruit Beer,8,10,10,240,0,0,0,0,0
+20,Brouwerij Huyghe,Delirium Tremens,Belgium,Western Europe,Europe,Belgian Strong Ale,8.5,50,16,255,1,0,0,0,0
+21,Verhaeghe,Duchesse de Bourgogne,Belgium,Western Europe,Europe,Sour Red/Brown,6.2,6,20,186,0,0,0,0,0
+22,Duvel Moortgat,Duvel,Belgium,Western Europe,Europe,Belgian Strong Ale,8.5,50,16,255,0,0,0,0,0
+22,water (dH2O),,,,,,0,0,0,0,0,0,0,0,0
+24,Unibroue (Sapporo),La Fin du Monde,Canada,Northern America,North America,Abbey Tripel,9,19,5.5,270,0,0,0,0,0
+25,Flying Dog Brewery,Flying Dog Pale Ale,USA,Northern America,North America,American Pale Ale,5.5,35,6,165,0,0,0,0,0
+26,Flying Dog Brewery,Flying Dog Snake Dog IPA,USA,Northern America,North America,IPA,7.1,60,11,213,0,0,0,0,0
+27,Founders Brewing Company,Founders All Day IPA,USA,Northern America,North America,IPA,4.7,42,6,141,0,0,0,0,0
+28,Founders Brewing Company,Founders Centennial IPA,USA,Northern America,North America,IPA,7.2,65,11,216,0,0,0,0,0
+29,Founders Brewing Company,Founders Dirty Bastard,USA,Northern America,North America,Scotch Ale,8.5,50,13,255,0,0,0,0,0
+30,Frankenheim Privatbrauerei,Frankenheim Alt,Germany,Northern America,North America,Altbier,4.8,11,11,144,0,0,0,0,0
+31,St. James's Gate (Diageo),Guinness Spec. Export,Ireland,Northern Europe,Europe,Foreign Stout,8,50,35,240,0,0,0,0,0
+32,Brouwerij Van Steenberge,Gulden Draak,Belgium,Western Europe,Europe,Belgian Strong Ale,10.5,28,17,315,0,0,0,0,0
+33,Brouwerij Bosteels,Tripel Karmeliet,Belgium,Western Europe,Europe,Abbey Tripel,8.4,30,6,252,0,1,0,0,1
+34,Brouwerij Bosteels,Pauwel Kwak,Belgium,Western Europe,Europe,Ale,8.4,50,16,252,0,1,0,0,0
+35,Liefmans (Duvel-Moortgat),Liefmans Fruitesse,Belgium,Western Europe,Europe,Fruit Beer,3.8,7,6,114,0,0,0,0,0
+36,John Martin,Martin's IPA,Belgium,Western Europe,Europe,IPA,6.9,36,10,207,0,0,0,0,0
+37,Charles Wells,McEwan's Export,UK,Northern Europe,Europe,Bitter,4.5,24,10,135,0,0,0,0,0
+38,Moosehead Brewery,Moosehead Lager,Canada,Northern America,North America,Pale Lager,5,16,3,150,0,0,0,0,0
+39,Nøgne Ø (Hansa Borg),Nøgne Ø Pale Ale,Norway,Northern Europe,Europe,American Pale Ale,6,40,8,180,0,1,0,0,0
+40,Officina della birra,Lisbeth,Switzerland,Western Europe,Europe,American Pale Ale,7.5,47,8,225,0,1,0,0,0
+41,Brasserie d'Orval,Orval,Belgium,Western Europe,Europe,Belgian Ale,6.2,32,8,186,1,0,0,0,0
+42,Pietra,Pietra,France,Western Europe,Europe,Amber Lager,6,26,12,180,0,0,0,0,0
+43,Brewdog,Punk,UK,Northern Europe,Europe,IPA,5.6,40,7.6,168,0,0,0,0,0
+44,Cerveceria Malteria Quilmes SAICAY (InBev),Quilmes,Argentina,South America,South America,Pale Lager,4.9,15,3,147,0,0,0,0,0
+45,Desnoes and Geddes (Diageo PLC),Red Stripe,Jamaica,Caribbean,North America,Pale Lager,4.7,17,3,141,0,0,0,0,0
+46,Brasserie Rochefort,Rochefort Trappistes 10,Belgium,Western Europe,Europe,Abt/Quadrupel,11.3,30,40,339,0,0,0,0,0
+47,Sabeco,Saigon Export,Vietnam,South-eastern Asia,Asia,Pale Lager,4.9,15,3,147,0,0,0,1,0
+48,Sierra Nevada Brewing Company,Sierra Nevada Pale Ale,USA,Northern America,North America,American Pale Ale,5.6,37,8,168,0,0,0,0,0
+49,Sierra Nevada Brewing Company,Sierra Nevada Torpedo Extra IPA,USA,Northern America,North America,IPA,7.2,65,11,216,0,0,0,0,0
+50,Boon Rawd Brewery,Singha,Thailand,South-eastern Asia,Asia,Premium Lager,5,18,4,150,0,0,0,0,0
+51,John Martin,Timmermans Tradition Blanche,Belgium,Western Europe,Europe,Witbier,4.5,5,4,135,0,1,0,0,0
+52,Trois Dames,La Fraicheur,Switzerland,Western Europe,Europe,Witbier,4.8,20,4,144,1,1,0,0,0
+53,Tsing Tao,Tsing Tao,China,Eastern Asia,Asia,Chinese Pale Lager,5,18,4,144,0,0,0,1,0
+54,Brouwerij der Trappisten van Westmalle,Westmalle tripel,Belgium,Western Europe,Europe,Trappiste,9.5,39,6,285,0,0,0,0,0
+55,Verhaeghe,Barbe Rufa,Belgium,Western Europe,Europe,Belgian Strong Ale,8,30,15,255,0,0,0,0,0
+56,La cotta,La cotta bionda,Italy,Southern Europe,Europe,Golden Ale,4.8,75,4,144,1,0,0,0,0
+57,Birrificio Trunasse,Hoppy Couple,Italy,Southern Europe,Europe,IPA,6,50,8,180,1,0,0,0,0
+58,Trumer,Waldbier 2014 Wienerwald,Austria,Western Europe,Europe,Spice/Herb/Vegetable,8.7,15,12.7,246,1,0,0,0,0
+59,Bosun's Moustache,Brick By Brick Bosun's Moustache,Lithuania,Northern Europe,Europe,IPA,6,60,8,180,0,0,0,0,0
+60,Grupo Modelo,Corona Extra,Mexico,Central America,North America,Pale Lager,4.6,18,3,138,0,0,1,1,0
+61,Hofbrau,Weisse Alkoholfrei,Germany,Western Europe,Europe,Low Alcohol,0.5,12,3,80,0,1,0,0,0
+62,Valaisanne (Feldschlösschen),Valaisanne Ämrich,Switzerland,Western Europe,Europe,Weissbier,5.5,10,5.6,165,1,1,0,0,0
+63,Brasserie Gessienne,Blanche,France,Western Europe,Europe,Weissbier,5.6,15,4,168,1,1,0,0,0
+64,Mateo & Bernabé,Mateo 21,Spain,Southern Europe,Europe,Wheat Ale,5,13,4,150,1,1,0,0,0
+65,Oland Brewery (AB-InBev),Alexander Keiths India Pale Ale,Canada,Northern America,North America,IPA,5,20,7,150,0,0,1,0,0
+66,Sleeman,Cream Ale,Canada,Northern America,North America,Cream Ale,5,15,5,150,0,0,0,0,0
+67,Sleeman,Original draught,Canada,Northern America,North America,American-Style Light Lager,5,10,3,140,0,0,0,0,0
+68,Mill Street,Organic Lager,Canada,Northern America,North America,Lager - Pale,4.2,11,3,126,0,0,0,0,0
+69,Labatt,Budweiser,Canada,Northern America,North America,American Lager,5,10,4,145,0,0,0,0,0
+70,Coors Brewing,Coors Light,Canada,Northern America,North America,American-Style Light Lager,4,8,2,102,0,0,1,0,0
+71,Wellington,S.P.A,Canada,Northern America,North America,Pale Ale,4.5,22,6,150,0,0,0,0,0
+72,Wellington,County,Canada,Northern America,North America,Ale,5,25,10,150,0,0,0,0,0
+73,Wellington,Arkell,Canada,Northern America,North America,Ale,4,18,8,120,0,0,0,0,0
+74,Wellington,Imperial,Canada,Northern America,North America,Stout,8,42,35,240,0,0,0,0,0
+75,Bitchin' Brewery,Stout,UK,Northern Europe,Europe,Stout,6.4,35,30,192,0,0,0,0,0
+76,Bitchin' Brewery,Coffee Stout,UK,Northern Europe,Europe,Stout,6.4,35,30,192,0,0,0,0,0
+77,Windsor & Eton,Magna Carta,UK,Northern Europe,Europe,Ale,7.2,30,15,216,0,0,0,0,0
+78,Hackuarium,Fakufaku,Switzerland,Western Europe,Europe,Stout,6.5,40,35,195,1,0,0,0,0
+79,Frères Papinot,Calvinus Blanche,Switzerland,Western Europe,Europe,Weissbier,5.2,15,13,156,1,1,0,0,0
+80,Frères Papinot,Calvinus Blonde,Switzerland,Western Europe,Europe,Pale Lager,4.8,18,7,156,0,0,0,0,0
+81,Les Murailles,Meynite,Switzerland,Western Europe,Europe,Belgian Ale,5,25,10,150,0,0,0,0,0
+82,Les Murailles,Sorcière,Switzerland,Western Europe,Europe,Belgian Dubbel,6,25,14,180,0,0,0,0,0
+83,Les Murailles,Pieuse,Switzerland,Western Europe,Europe,Belgian Pale Ale,6,28,6,180,1,0,0,0,0
+84,Homebrew,Roter Baron,Switzerland,Western Europe,Europe,Altbier,5,30,11,150,1,0,0,0,0
+85,Docteur Gabs,Houleuse,Switzerland,Western Europe,Europe,Witbier,5,15,4,150,1,1,0,0,0
+86,Docteur Gabs,Pepite,Switzerland,Western Europe,Europe,Pale Ale,4.8,20,6,144,1,0,0,0,0
+87,Docteur Gabs,Tempète,Switzerland,Western Europe,Europe,Belgian Tripel,8,32,4,240,1,0,0,0,0
+88,La Nébuleuse,Embuscade,Switzerland,Western Europe,Europe,IPA,6.7,65,8.2,201,1,1,0,0,0
+89,La Nébuleuse,Malt Capone,Switzerland,Western Europe,Europe,Robust Porter,7,30,50,210,1,1,0,1,0
+90,La Nébuleuse,Stirling,Switzerland,Western Europe,Europe,California Common,5.3,38,7.3,159,1,0,0,0,0
+91,Bieraria Tschlin,BE,Switzerland,Western Europe,Europe,Pale Lager,5,15,4,150,1,0,0,0,0
+92,Mongozo,Banana,Belgium,Western Europe,Europe,Fruit Beer,3.6,7,4,108,0,0,0,0,0
+93,Chimay,Tripel,Belgium,Western Europe,Europe,Abbey Tripel,9,35,8,230,1,1,0,0,0
+94,Andechs,Weissbier hell,Belgium,Western Europe,Europe,Weissbier,5.5,12,4,165,0,1,0,0,0
+95,Warsteiner,Konig Ludwig Dunkel,Germany,Western Europe,Europe,Munich Dunkel,5.1,20,20,153,0,0,0,0,0
+96,Feldschlosschen,Braufrisch,Switzerland,Western Europe,Europe,Pale Lager,4.8,12,3,144,0,0,0,0,0
+97,Brasserie DuPont,BioLegère,Belgium,Western Europe,Europe,Saison/Farmhouse Ale,3.5,18,5,105,1,0,0,0,0
+98,water (dH2O),,,,,,0,0,0,0,0,0,0,0,0
+99,water (dH2O),,,,,,0,0,0,0,0,0,0,0,0
+100,water (dH2O),,,,,,0,0,0,0,0,0,0,0,0
+101,water (dH2O),,,,,,0,0,0,0,0,0,0,0,0
+102,Coudres,Pale Ale,Switzerland,Western Europe,Europe,Pale Ale,5,35,6,150,1,0,0,0,0
+103,Unserbier,Amber,Switzerland,Western Europe,Europe,Amber Ale,5.2,25,12,156,0,0,0,0,0
+104,Brasserie du Mont Blanc,Brassin d'Hiver,France,Western Europe,Europe,Winter Warmer,6.5,20,18,195,0,0,0,0,0
+105,Ottakringer,Wiener Original,Austria,Western Europe,Europe,Vienna Lager,5.2,20,10,156,0,0,0,0,0
+106,Homebrew,Amber Ale,Switzerland,Western Europe,Europe,Amber Ale,5.5,28,12,165,1,0,0,0,0
+107,Homebrew,SquareBeer,Switzerland,Western Europe,Europe,White IPA,6,45,5,180,1,1,0,0,0
+108,control empty cell,,,,,,,,,,0,0,0,0,0
+109,control empty tube,,,,,,,,,,0,0,0,0,0
+110,La Mule,Browney,Switzerland,Western Europe,Europe,Belgian Dark Strong Ale,8.5,25,25,255,1,0,0,0,0
+111,Bartis,La Koyot,Switzerland,Western Europe,Europe,Strong Pale Ale,7,50,10,210,0,0,0,0,0
+112,Brasserie Montheysanne,La Montheysanne,Switzerland,Western Europe,Europe,Pale Lager,5,15,3,150,1,0,0,0,0
+113,Brasserie du Griffon,La Fourbe,Switzerland,Western Europe,Europe,Amber Ale,5,20,10,150,1,0,0,0,0
+114,Brasserie Sierrvoise,Noire,Switzerland,Western Europe,Europe,Stout,6,30,30,180,1,0,0,0,0
+115,Brasseurs de Vollèges,La Tourbillon,Switzerland,Western Europe,Europe,Saison/Farmhouse Ale,6.5,25,6,195,1,0,0,0,0
+116,Brasserie du Vieux Chemin,La Prudencia,Switzerland,Western Europe,Europe,Abbey Dubbel,7,20,14,210,1,0,0,0,0
+117,Brasserie Tardiv,Tardiv,Switzerland,Western Europe,Europe,Premium Lager,5,15,4,150,1,0,0,0,0
+118,Brasserie des 5 quatre mille,Biere de Zinal,Switzerland,Western Europe,Europe,Blanche au seigle,5,15,4,150,1,1,0,0,0
+119,Brasserie d'Ayent,Celsius Folamour,Switzerland,Western Europe,Europe,Specialty Beer,5.5,20,10,165,1,0,0,0,0
+120,Coudres,Blonde,Switzerland,Western Europe,Europe,Blonde Ale,5,18,4,150,1,0,0,0,0
+121,Leffe,Vieille Cuvée,Belgium,Western Europe,Europe,Abbey Dubbel,8.2,22,16,246,0,0,0,0,0
+122,La Nébuleuse,ChichaBeer experimental,Switzerland,Western Europe,Europe,Specialty Beer,5,15,4,150,1,0,0,0,0
+123,Muller Brau,Pale Ale,Switzerland,Western Europe,Europe,Pale Ale,5.5,30,6,165,0,0,0,0,0
+124,Docteur Gabs,Ipanema,Switzerland,Western Europe,Europe,IPA,6,40,6,180,0,0,0,0,0
+125,Brewdog,5AM Saints,UK,Northern Europe,Europe,Amber Ale,5,35,12,150,0,0,0,0,0
+126,Boxer,Boxer Old,Switzerland,Western Europe,Europe,Premium Lager,5.2,18,6,156,0,0,0,0,0

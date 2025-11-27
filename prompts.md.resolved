@@ -1,0 +1,162 @@
+# Code Generation Prompts
+
+Here is a series of prompts to guide a code-generation LLM through the construction of the Molecular Beer Recommendation App.
+
+## Prompt 1: Project Initialization & ETL Script
+
+```text
+You are an expert Full Stack Developer. We are building a "Molecular Beer Recommendation App", a static SPA using React, Vite, TypeScript, and Tailwind CSS.
+
+**Task:**
+1.  Initialize a new Vite project with React and TypeScript.
+2.  Install `tailwindcss`, `postcss`, `autoprefixer`, and `lucide-react`.
+3.  Configure Tailwind CSS with the following "Biohacker" theme colors:
+    -   Canvas: `#020617` (slate-950)
+    -   Surface: `#0f172a` (slate-900)
+    -   Primary Accent: `#FACC15` (yellow-400)
+    -   Text Primary: `#f8fafc` (slate-50)
+    -   Text Data: `#4ade80` (green-400)
+    -   Text Muted: `#94a3b8` (slate-400)
+    -   Fonts: Inter (UI) and JetBrains Mono (Data).
+4.  Create a Node.js script `etl.js` in the root directory to process data.
+    -   It should read raw files from a `raw_data` folder (assume existence): `beers-db.csv`, `raman-data.csv`, `yeast-data.csv`, `yeast_ITS1_phylogenetic_tree.nwk`.
+    -   **Processing Logic:**
+        -   Parse CSVs.
+        -   Parse the Newick tree string into a JSON structure that supports traversal (nodes with children and branch lengths).
+        -   Align IDs across all datasets.
+        -   Round Raman vectors to 4 decimal places.
+        -   Calculate relative abundances for yeast data.
+    -   **Output:** Write `beers.json`, `raman.json`, `yeast.json`, and `tree.json` to `public/data/`.
+
+**Deliverables:**
+-   Project structure and config files (`tailwind.config.js`, etc.).
+-   `etl.js` script with robust error handling.
+-   Instructions to run the ETL script.
+```
+
+## Prompt 2: Core Logic & Math Utilities (TDD)
+
+```text
+We have the project set up. Now we need to implement the core mathematical and biological logic for the recommendation engine. We will use a Test-Driven Development (TDD) approach.
+
+**Task:**
+1.  Create `src/utils/math.ts`:
+    -   Implement `cosineSimilarity(vecA, vecB)`: Standard cosine similarity.
+    -   Implement `sfecSimilarity(vecA, vecB)`: Squared First-Difference Euclidean Cosine.
+        -   Step 1: Differentiate vectors ($V'_i = V_{i+1} - V_i$).
+        -   Step 2: Calculate Cosine Similarity of the differentiated vectors.
+2.  Create `src/utils/bio.ts`:
+    -   Implement `calculateUniFrac(tree, sampleA, sampleB)`: Weighted UniFrac distance.
+    -   Logic:
+        -   Normalize counts to relative abundances.
+        -   Map abundances to tree tips.
+        -   Traverse tree to calculate "mass" ($A_i, B_i$) descending from each branch.
+        -   Apply formula: $D = \frac{\sum b_i \times |A_i - B_i|}{\sum b_i \times \max(A_i, B_i)}$.
+        -   Return Similarity: $1 - D$.
+3.  Create tests in `src/utils/__tests__/`:
+    -   `math.test.ts`: Test `sfecSimilarity` with known vectors.
+    -   `bio.test.ts`: Test `calculateUniFrac` with a mock tree and samples. Ensure self-comparison returns distance 0 (similarity 1).
+
+**Deliverables:**
+-   `src/utils/math.ts` and `src/utils/bio.ts`.
+-   Corresponding test files with passing tests.
+```
+
+## Prompt 3: Recommendation Engine
+
+```text
+Now that we have the low-level math and bio functions, let's build the Recommendation Engine.
+
+**Task:**
+1.  Create `src/engine/recommender.ts`.
+2.  Implement a function `getRecommendations(selectedBeerIds, allBeers, ramanData, yeastData, tree, options)`:
+    -   **Options**: `timeSpent` (seconds), `currentSelection` (list of IDs).
+    -   **Logic**:
+        -   Calculate pairwise similarity between selected beers and all other candidates.
+        -   **Scoring**:
+            -   If both have yeast data: $S_{Total} = 0.618 \times S_{Raman} + 0.382 \times S_{Yeast}$.
+            -   Else: $S_{Total} = 0.618 \times S_{Raman}$.
+        -   **Barman Modes**:
+            -   Calculate Homogeneity ($H$) of selected beers.
+            -   **Wander Away**: If `timeSpent > 180` AND `H < 0.6`: Filter to 75th-90th percentile, pick 2 random.
+            -   **Comfort Zone**: Else: Filter to 90th-100th percentile, pick 2 random.
+        -   Exclude already selected beers.
+        -   Return top 2 distinct recommendations with their scores and metadata.
+
+**Deliverables:**
+-   `src/engine/recommender.ts`.
+-   Unit tests verifying the scoring logic and mode switching.
+```
+
+## Prompt 4: UI Foundation & Components
+
+```text
+The logic is ready. Now let's build the "Lab Terminal" UI foundation.
+
+**Task:**
+1.  **Global Styles**:
+    -   Apply the "Biohacker" theme in `index.css`.
+    -   Add a background texture (diffraction grating) using CSS or an SVG pattern.
+2.  **Components (`src/components/`)**:
+    -   `Layout.tsx`: Main container with the dark background, header (Logo + Search), and responsive grid.
+    -   `BeerCard.tsx`:
+        -   Rectangular, sharp corners.
+        -   Dark background (`bg-slate-900`) with subtle border.
+        -   Hover effect: Border turns "Vibrant Yellow" (`#FACC15`) with a glow.
+        -   Display: Name, Brewery, "DNA" icon (if yeast data exists), and a placeholder for the "Barcode".
+    -   `Barcode.tsx`: A visual component taking a Raman vector (or dummy data) and rendering vertical stripes of varying colors/widths.
+    -   `Button.tsx`: "Industrial" style, solid yellow, black text, uppercase, sharp corners.
+
+**Deliverables:**
+-   Styled components implementing the design specs.
+-   `App.tsx` updated to display a static list of `BeerCard`s to verify the look and feel.
+```
+
+## Prompt 5: State Management & Feature Implementation
+
+```text
+Let's make the UI functional.
+
+**Task:**
+1.  **Data Context**:
+    -   Create `src/context/DataContext.tsx` to load `beers.json`, `raman.json`, `yeast.json`, and `tree.json` on mount.
+    -   Show a "Sequencing..." loading state while fetching.
+2.  **Selection Logic**:
+    -   Create `src/context/SelectionContext.tsx` (or combine with DataContext).
+    -   Track `selectedBeers` (max 3).
+    -   Track `startTime` (for the "Barman" timer).
+3.  **Main Features**:
+    -   **Beer List**: Render the list of beers from context. Allow toggling selection.
+    -   **Map Placeholder**: Add a simple visual placeholder for the Map Nav (can be a static SVG for now).
+    -   **Analyze Action**: Add a "Analyze" button that triggers the recommendation engine.
+4.  **Results View**:
+    -   Display the 2 recommended beers in a prominent "Results" section.
+    -   Show the Match % score.
+    -   Show the disclaimer if yeast data was missing.
+
+**Deliverables:**
+-   Functional App with data loading, selection, and recommendation flow.
+-   The "Analyze" button should log results to the console or display them roughly.
+```
+
+## Prompt 6: Integration & Polish
+
+```text
+Final step: Wire everything together and polish the experience.
+
+**Task:**
+1.  **Integration**:
+    -   Ensure the `Analyze` button calls `getRecommendations` from `src/engine/recommender.ts` using real data.
+    -   Pass the correct `timeSpent` to the engine.
+    -   Display the returned recommendations using `BeerCard` components.
+2.  **Refinement**:
+    -   **Typography**: Ensure numbers use `JetBrains Mono` (or monospace) and text uses `Inter`.
+    -   **Animations**: Add subtle entry animations for the results.
+    -   **Loading**: Ensure the "Sequencing..." loading screen looks "scientific" (e.g., cycling text or DNA progress bar).
+3.  **Final Review**:
+    -   Check for any console errors.
+    -   Verify the "Wander Away" vs "Comfort Zone" logic by manipulating the timer/selection in tests or dev tools.
+
+**Deliverables:**
+-   Fully functional, polished application ready for deployment.
+```
