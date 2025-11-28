@@ -99,7 +99,7 @@ export const GeoMap: React.FC<GeoMapProps> = ({ beers, onSelectBeer, selectedBee
         return (
             <div className="relative w-full aspect-video bg-slate-950 rounded-lg overflow-hidden border border-slate-800 shadow-2xl">
                 <div className="absolute top-4 left-4 z-10">
-                    <h2 className="text-2xl font-bold text-slate-50">GLOBAL_BEER_INDEX</h2>
+                    <h2 className="text-2xl font-bold text-slate-50">OUR_BEERS</h2>
                     <p className="text-slate-400 text-sm">SELECT_REGION_TO_EXPLORE</p>
                 </div>
 

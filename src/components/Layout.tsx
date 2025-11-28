@@ -1,5 +1,5 @@
-import React from 'react';
-import { Search, Menu } from 'lucide-react';
+import React, { useState } from 'react';
+import { Search, Menu, X } from 'lucide-react';
 
 interface LayoutProps {
     children: React.ReactNode;
@@ -16,6 +16,13 @@ interface LayoutProps {
  * - Responsive container.
  */
 export const Layout: React.FC<LayoutProps> = ({ children, currentView, onNavigate }) => {
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+    const handleNavigate = (view: 'home' | 'about') => {
+        onNavigate(view);
+        setMobileMenuOpen(false);
+    };
+
     return (
         <div className="min-h-screen flex flex-col relative z-10">
             {/* Header */}
@@ -24,14 +31,14 @@ export const Layout: React.FC<LayoutProps> = ({ children, currentView, onNavigat
                     {/* Logo */}
                     <div
                         className="flex items-center gap-2 cursor-pointer group"
-                        onClick={() => onNavigate('home')}
+                        onClick={() => handleNavigate('home')}
                     >
                         <span className="text-yellow-400 font-mono text-xl font-bold group-hover:text-white transition-colors">[</span>
                         <span className="text-slate-50 font-bold text-xl tracking-tight group-hover:text-yellow-400 transition-colors">BeerDeCoded</span>
                         <span className="text-yellow-400 font-mono text-xl font-bold group-hover:text-white transition-colors">]</span>
                     </div>
 
-                    {/* Search / Nav */}
+                    {/* Desktop Nav */}
                     <div className="flex items-center gap-4">
                         <button
                             onClick={() => onNavigate('about')}
@@ -48,11 +55,43 @@ export const Layout: React.FC<LayoutProps> = ({ children, currentView, onNavigat
                                 className="bg-transparent border-none outline-none text-sm text-slate-300 placeholder-slate-600 w-48 font-mono"
                             />
                         </div>
-                        <button className="text-slate-400 hover:text-yellow-400 transition-colors md:hidden">
-                            <Menu size={24} />
+
+                        {/* Mobile Menu Button */}
+                        <button
+                            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                            className="text-slate-400 hover:text-yellow-400 transition-colors md:hidden"
+                            aria-label="Toggle menu"
+                        >
+                            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
                         </button>
                     </div>
                 </div>
+
+                {/* Mobile Menu Dropdown */}
+                {mobileMenuOpen && (
+                    <div className="md:hidden border-t border-slate-800 bg-slate-950/95 backdrop-blur-md">
+                        <div className="max-w-7xl mx-auto px-4 py-4 space-y-3">
+                            <button
+                                onClick={() => handleNavigate('home')}
+                                className={`block w-full text-left font-mono text-sm py-2 px-4 rounded transition-colors ${currentView === 'home'
+                                        ? 'bg-yellow-400/10 text-yellow-400'
+                                        : 'text-slate-400 hover:bg-slate-800 hover:text-white'
+                                    }`}
+                            >
+                                HOME
+                            </button>
+                            <button
+                                onClick={() => handleNavigate('about')}
+                                className={`block w-full text-left font-mono text-sm py-2 px-4 rounded transition-colors ${currentView === 'about'
+                                        ? 'bg-yellow-400/10 text-yellow-400'
+                                        : 'text-slate-400 hover:bg-slate-800 hover:text-white'
+                                    }`}
+                            >
+                                ABOUT_PROJECT
+                            </button>
+                        </div>
+                    </div>
+                )}
             </header>
 
             {/* Main Content */}
