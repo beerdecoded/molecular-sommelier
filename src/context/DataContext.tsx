@@ -1,11 +1,15 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
-interface Beer {
+export interface Beer {
     id: number;
     name: string;
     brewery: string;
+    country: string;
+    region: string;
+    subregion: string;
+    style: string;
+    abv: number;
     has_yeast_data: boolean;
-    // Add other fields as needed
 }
 
 interface DataContextType {

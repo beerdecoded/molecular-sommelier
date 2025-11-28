@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Layout } from './components/Layout';
 import { BeerCard } from './components/BeerCard';
 import { Button } from './components/Button';
 import { SequencingLoader } from './components/SequencingLoader';
-import { Beaker, RotateCcw, Dna, AlertTriangle } from 'lucide-react';
+import { GeoMap } from './components/GeoMap';
+import { About } from './components/About';
+import { Beaker, RotateCcw, Dna } from 'lucide-react';
 import { DataProvider, useData } from './context/DataContext';
 import { SelectionProvider, useSelection } from './context/SelectionContext';
 
@@ -62,12 +64,7 @@ const MainContent: React.FC = () => {
                 beer={rec.beer}
                 ramanVector={ramanData[rec.beer.id]}
               />
-              {rec.missingYeastData && (
-                <div className="mt-2 flex items-start gap-2 text-yellow-500 text-xs bg-yellow-500/10 p-2 rounded font-mono">
-                  <AlertTriangle size={14} className="mt-0.5 shrink-0" />
-                  <p>YEAST_DATA_UNAVAILABLE // SCORE_WEIGHT: RAMAN(61.8%)</p>
-                </div>
-              )}
+
             </div>
           ))}
         </div>
@@ -77,11 +74,11 @@ const MainContent: React.FC = () => {
 
   return (
     <>
-      <div className="mb-8 flex flex-col md:flex-row justify-between items-end gap-4 sticky top-16 bg-slate-950/95 backdrop-blur z-40 py-4 border-b border-slate-900">
+      <div className="mb-8 flex flex-col md:flex-row justify-between items-center gap-4 sticky top-16 bg-slate-950/95 backdrop-blur z-40 py-4 border-b border-slate-900">
         <div>
-          <h2 className="text-3xl font-bold text-slate-50 mb-2">SELECT_SAMPLES</h2>
-          <p className="text-slate-400 max-w-xl">
-            Select up to 3 beers to analyze their molecular fingerprint.
+          <h2 className="text-xl font-bold text-slate-50">SAMPLE_SELECTION</h2>
+          <p className="text-slate-400 text-sm">
+            Navigate the map to select up to 3 beers.
           </p>
         </div>
 
@@ -101,27 +98,23 @@ const MainContent: React.FC = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pb-20">
-        {beers.map(beer => (
-          <BeerCard
-            key={beer.id}
-            beer={beer}
-            ramanVector={ramanData[beer.id]}
-            selected={selectedIds.includes(beer.id)}
-            onSelect={() => toggleSelection(beer.id)}
-          />
-        ))}
-      </div>
+      <GeoMap
+        beers={beers}
+        onSelectBeer={(beer) => toggleSelection(beer.id)}
+        selectedBeerIds={selectedIds}
+      />
     </>
   );
 };
 
 function App() {
+  const [view, setView] = useState<'home' | 'about'>('home');
+
   return (
     <DataProvider>
       <SelectionProvider>
-        <Layout>
-          <MainContent />
+        <Layout currentView={view} onNavigate={setView}>
+          {view === 'home' ? <MainContent /> : <About onBack={() => setView('home')} />}
         </Layout>
       </SelectionProvider>
     </DataProvider>

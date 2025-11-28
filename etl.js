@@ -136,6 +136,7 @@ function processBeers() {
             brewery: beer.Brewery,
             country: beer.Country,
             region: beer.Region,
+            subregion: beer['Un-Subregion'],
             style: beer.Style,
             abv: parseFloat(beer.ABV) || 0,
             ibu: parseFloat(beer.IBU) || 0,

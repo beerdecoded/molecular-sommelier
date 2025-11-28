@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dna, Check } from 'lucide-react';
+import { Dna, Check, Triangle } from 'lucide-react';
 import { Barcode } from './Barcode';
 
 interface Beer {
@@ -56,11 +56,18 @@ export const BeerCard: React.FC<BeerCardProps> = ({
             <div className="p-5">
                 <div className="flex justify-between items-start mb-2">
                     <span className="font-mono text-xs text-slate-500">ID:{beer.id.toString().padStart(3, '0')}</span>
-                    {beer.has_yeast_data && (
-                        <div className="text-green-400" title="Genomic Data Available">
-                            <Dna size={16} />
-                        </div>
-                    )}
+                    <div className="flex gap-2">
+                        {ramanVector && ramanVector.length > 0 && (
+                            <div className="text-blue-400" title="Raman Spectra Available">
+                                <Triangle size={16} className="rotate-180" />
+                            </div>
+                        )}
+                        {beer.has_yeast_data && (
+                            <div className="text-green-400" title="Genomic Data Available">
+                                <Dna size={16} />
+                            </div>
+                        )}
+                    </div>
                 </div>
 
                 <h3 className="text-slate-50 font-bold text-lg leading-tight mb-1 group-hover:text-yellow-400 transition-colors">
